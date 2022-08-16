@@ -1,0 +1,145 @@
+{
+  "info": {
+    "_postman_id": "9154bf1c-f8e0-47b3-b0f9-1f3232404ff0",
+    "name": "Characters",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GetAllCharacters",
+      "id": "35b0ccd3-4f49-4aaa-aa77-03004f91fc6e",
+      "request": {
+        "method": "GET",
+        "header": [
+          
+        ],
+        "url": "http://localhost:8080/charactersR"
+      },
+      "response": [
+        
+      ]
+    },
+    {
+      "name": "GetOneCharacter",
+      "id": "bcbf2009-9671-4870-95b3-7b6fb2414f6d",
+      "request": {
+        "method": "GET",
+        "header": [
+          
+        ],
+        "url": {
+          "raw": "http://localhost:8080/charactersReadone?id=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "charactersReadone"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": [
+        
+      ]
+    },
+    {
+      "name": "CreateCharacter",
+      "id": "ef9e495f-ee74-43f7-98c1-fe349a04a0e2",
+      "request": {
+        "method": "POST",
+        "header": [
+          
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": \"4\",\r\n    \"name\": \"Richard\",\r\n    \"color_hair\": \"Blond\",\r\n    \"color_eyes\": \"Black\",\r\n    \"age\": 19,\r\n    \"height\": 187\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:8080/charactersC"
+      },
+      "response": [
+        
+      ]
+    },
+    {
+      "name": "ReplaceCharacter",
+      "id": "beef82e6-d1f3-4668-8475-cae20d82547d",
+      "request": {
+        "method": "POST",
+        "header": [
+          
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": \"5\",\r\n    \"name\": \"Miguel Timote\",\r\n    \"color_hair\": \"Green\",\r\n    \"color_eyes\": \"Purple\",\r\n    \"age\": 21,\r\n    \"height\": 190\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/charactersU?id=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "charactersU"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": [
+        
+      ]
+    },
+    {
+      "name": "DeleteCharacter",
+      "id": "bda37e48-cea3-408c-99b5-aadbe918da21",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          
+        ],
+        "url": {
+          "raw": "http://localhost:8080/charactersD?id=3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "charactersD"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "3"
+            }
+          ]
+        }
+      },
+      "response": [
+        
+      ]
+    }
+  ]
+}
